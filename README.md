@@ -5,5 +5,3 @@ Portfólio criado como exemplo de site ultilizando Bulma, no meu curso de Progra
 ## Como Iniciar
 
 Execute o arquivo index.html (abra-o no navegador de sua preferência).
-
-
