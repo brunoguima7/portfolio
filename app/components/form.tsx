@@ -66,6 +66,7 @@ export default function Form(){
 
         try {
             setError("")
+            setSucessMessage(false)
             validateEmail(sender.contact)
             validateMessage(sender.message)
             emailjs.send("service_fnpubzr", "template_8pousgu", templateParams, "R6lvdpzoTbfd6EKBX")
