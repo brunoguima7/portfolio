@@ -5,7 +5,7 @@ import { JetBrains_Mono } from 'next/font/google'
  
 export const metadata: Metadata = {
   title: 'Bruno Guimarães Dev',
-  description: "Este é o meu portfolio, sinta a vontade para visitá-lo."
+  description: "Este é o meu portfolio, sinta-se à vontade para visitá-lo."
 }
  
 const jetBrains = JetBrains_Mono({
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <>
       <html lang="en" className={`${jetBrains.className} !scroll-smooth overflow-y-scroll no-scrollbar`}>
-      <body>
+      <body className="mb-32">
       <Navbar/>
       {children}
       </body>

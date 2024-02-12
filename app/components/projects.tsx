@@ -32,7 +32,7 @@ export default function Projects({projects}: ProjectsProps) {
                                      alt={image.alt}
                                      width="300"
                                      height="300"
-                                     className="rounded-2xl hover:blur"
+                                     className="rounded-2xl xl:hover:blur"
                                  />
                              </div>
                              <div className="text-center">
