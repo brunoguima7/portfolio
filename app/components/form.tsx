@@ -114,7 +114,7 @@ export default function Form(){
                                 <label htmlFor="name" className="text-lg">Seu Nome</label>
                                 <input
                                     name="name"
-                                    className="text-slate-400 rounded-md w-72 md:w-[50rem] placeholder-slate-600 bg-slate-950 h-10 my-2 border-2 border-blue-900"
+                                    className="text-slate-400 rounded-md w-72 md:w-[45rem] placeholder-slate-600 bg-slate-950 h-10 my-2 border-2 border-blue-900"
                                     type="text"
                                     placeholder="Nome para contato"
                                     required
@@ -125,7 +125,7 @@ export default function Form(){
                                 <label htmlFor="email" className="text-lg">E-mail</label>
                                 <input
                                     name="email"
-                                    className="text-slate-400 rounded-md w-72 md:w-[50rem] placeholder-slate-600 bg-slate-950 h-10 my-2 border-2 border-blue-900"
+                                    className="text-slate-400 rounded-md w-72 md:w-[45rem] placeholder-slate-600 bg-slate-950 h-10 my-2 border-2 border-blue-900"
                                     type="text"
                                     placeholder="recrutador@email.com"
                                     required
@@ -136,14 +136,14 @@ export default function Form(){
                                 <label htmlFor="message" className="text-lg">Mensagem</label>
                                 <textarea
                                     name="message"
-                                    className="text-slate-400 rounded-md w-72 md:w-[50rem] placeholder-slate-600 bg-slate-950 h-20 my-2 border-2 border-blue-900"
+                                    className="text-slate-400 rounded-md w-72 md:w-[45rem] placeholder-slate-600 bg-slate-950 h-20 my-2 border-2 border-blue-900"
                                     placeholder="Vamos conversar.."
                                     required
                                     onChange={(ev) => setSenderMessage(ev)}
                                 />
                             </div>
                             <div className="flex justify-center">
-                                <button className="hover:bg-blue-900 rounded-lg w-44 md:w-[50rem] py-[0.3rem] text-center text-lg bg-[#45C0F6] shadow-lg" type="submit">Enviar</button>
+                                <button className="hover:bg-blue-900 rounded-lg w-44 md:w-[45rem] py-[0.3rem] text-center text-lg bg-[#45C0F6] shadow-lg" type="submit">Enviar</button>
                             </div>
                             {error != null && (
                                 <div className="flex justify-center">
