@@ -22,6 +22,46 @@ export default function Page() {
                 alt: "SVZ"
             }
         },
+        {
+            slug: "sv-enterprise-service",
+            name: "SVZ Enterprise",
+            image: {
+                url: "https://i.pinimg.com/736x/d1/45/0c/d1450cfccfc6d9be2f5c8ad33eb0e11f.jpg",
+                alt: "SVZ"
+            }
+        },
+        {
+            slug: "sv-enterprise-service",
+            name: "SVZ Enterprise",
+            image: {
+                url: "https://i.pinimg.com/736x/d1/45/0c/d1450cfccfc6d9be2f5c8ad33eb0e11f.jpg",
+                alt: "SVZ"
+            }
+        },
+        {
+            slug: "sv-enterprise-service",
+            name: "SVZ Enterprise",
+            image: {
+                url: "https://i.pinimg.com/736x/d1/45/0c/d1450cfccfc6d9be2f5c8ad33eb0e11f.jpg",
+                alt: "SVZ"
+            }
+        },
+        {
+            slug: "sv-enterprise-service",
+            name: "SVZ Enterprise",
+            image: {
+                url: "https://i.pinimg.com/736x/d1/45/0c/d1450cfccfc6d9be2f5c8ad33eb0e11f.jpg",
+                alt: "SVZ"
+            }
+        },
+        {
+            slug: "sv-enterprise-service",
+            name: "SVZ Enterprise",
+            image: {
+                url: "https://i.pinimg.com/736x/d1/45/0c/d1450cfccfc6d9be2f5c8ad33eb0e11f.jpg",
+                alt: "SVZ"
+            }
+        },
     ]
 
     return (

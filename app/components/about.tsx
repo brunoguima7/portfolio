@@ -43,8 +43,8 @@ export default function About() {
                     <h1 className="text-3xl xl:text-5xl mt-12 xl:mt-40 xl:mb-16">Sobre Mim</h1>
                 </div>
                 <div className="flex flex-col xl:flex-row justify-center xl:space-x-12">
-                    <div className="flex justify-center">
-                        <ul className="hidden xl:flex flex-wrap space-x-3 text-center justify-center w-60 xl:max-2xl:py-24 2xl:py-10">
+                    <div className="flex itens-stretch">
+                        <ul className="hidden xl:flex self-center flex-wrap space-x-3 text-center justify-center w-60">
                             <li className="text-black bg-yellow-400 w-28 drop-shadow-lg rounded-md ml-3 my-2">javascript</li>
                             <li className="text-white bg-sky-600 w-28 drop-shadow-lg rounded-md my-2">typescript</li>
                             <li className="text-black bg-cyan-400 w-24 drop-shadow-lg rounded-md my-2">react.js</li>
