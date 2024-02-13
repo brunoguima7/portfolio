@@ -2,6 +2,8 @@
 
 import { useState } from "react"
 import emailjs from "@emailjs/browser"
+import Link from "next/link"
+import Image from "next/image"
 
 export default function Form(){
 
@@ -95,7 +97,10 @@ export default function Form(){
                             <div className="flex space-x-3">
                                 <span className="hidden md:flex">Whatsapp:</span> <span className="text-blue-200">+55 11 920002725</span>
                             </div>
-                        
+                            <div className="flex space-x-4 justify-center">
+                                <Link href="https://github.com/brunoguima7" target="_blank"><Image className="drop-shadow-2xl" src="/images/github-icon.png" width="35" height="35" alt="Foto de perfil" unoptimized /></Link>
+                                <Link href="https://www.linkedin.com/in/bruno-guimar%C3%A3es-4b6348209/" target="_blank"><Image className="drop-shadow-2xl" src="/images/linkedin-icon.png" width="35" height="35" alt="Foto de perfil" unoptimized /></Link>
+                            </div>
                         </div>
                     </div>
                 </div>

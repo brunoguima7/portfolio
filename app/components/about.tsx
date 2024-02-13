@@ -9,7 +9,8 @@ export default function About() {
         <>
             <div className="flex flex-col space-y-12 justify-center mx-12 mt-28 xl:mx-16">
                 <div className="flex flex-col-reverse justify-center mt-8 xl:flex-row xl:mt-32">
-                    <div className="space-y-12 xl:w-1/2">
+                    
+                    <div className="space-y-4 md:space-y-12 xl:w-1/2">
                         <div className="flex justify-center mt-4 xl:justify-start">
                             <h1 className="text-4xl xl:text-5xl">
                                 Prazer, Sou o
@@ -21,14 +22,20 @@ export default function About() {
                                 Sou um Desenvolvedor com foco em Front-End, que ama criar e desenvolver sites e interfaces.
                             </p>
                         </div>
-                        <div className="flex justify-center md:justify-start xl:ml-4 space-x-4" id="about">
-                            <Link href="/contact" className="hover:brightness-90 rounded-xl w-32 py-2 xl:w-40 text-sm xl:text-lg text-center px-4 xl:py-1 drop-shadow-lg border-2 border-slate-950 bg-gradient-to-r from-blue-500 to-sky-300" >Contate-me</Link>
-                            <Link href="https://www.dropbox.com/scl/fi/y50ymsu9w19zojjwvq41s/Curriculo-Bruno-Guimaraes.pdf?rlkey=z69m193k1gfm1l4i8qc12784i&dl=1" className="hover:bg-sky-300 rounded-xl w-32 py-2 xl:w-40 text-sm xl:text-lg text-center px-4 xl:py-1 drop-shadow-lg border-2 border-sky-300" >Baixar CV</Link>
+                        <div className="flex flex-col-reverse md:flex-row">
+                            <div className="flex justify-center md:justify-start xl:ml-4 space-x-4 mt-8 md:mt-0" id="about">
+                                <Link href="/contact" className="hover:brightness-90 rounded-xl w-32 py-2 xl:w-40 text-sm xl:text-lg text-center px-4 xl:py-1 drop-shadow-lg border-2 border-slate-950 bg-gradient-to-r from-blue-500 to-sky-300" >Contate-me</Link>
+                                <Link href="https://www.dropbox.com/scl/fi/y50ymsu9w19zojjwvq41s/Curriculo-Bruno-Guimaraes.pdf?rlkey=z69m193k1gfm1l4i8qc12784i&dl=1" className="hover:bg-sky-300 rounded-xl w-32 py-2 xl:w-40 text-sm xl:text-lg text-center px-4 xl:py-1 drop-shadow-lg border-2 border-sky-300" >Baixar CV</Link>
+                            </div>
+                            <div className="flex justify-end md:justify-center space-x-5 mr-4 md:ml-8">
+                                <Link href="https://github.com/brunoguima7" target="_blank"><Image className="drop-shadow-2xl" src="/images/github-icon.png" width="35" height="35" alt="Foto de perfil" unoptimized /></Link>
+                                <Link href="https://www.linkedin.com/in/bruno-guimar%C3%A3es-4b6348209/" target="_blank"><Image className="drop-shadow-2xl" src="/images/linkedin-icon.png" width="35" height="35" alt="Foto de perfil" unoptimized /></Link>
+                            </div>
                         </div>
                     </div>
-                    <div className="flex justify-center">
-                        <div>
-                            <Image className="rounded-full drop-shadow-2xl mb-8 xl:mb-0" src="/images/perfil.png" width="250" height="250" alt="Foto de perfil" unoptimized />
+                    <div className="flex flex-col">
+                        <div className="flex justify-center">
+                            <Image className="rounded-full drop-shadow-2xl mb-8" src="/images/perfil.png" width="250" height="250" alt="Foto de perfil" unoptimized />
                         </div>
                     </div>
                 </div>
