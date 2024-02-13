@@ -11,16 +11,21 @@ export default function About() {
                 <div className="flex flex-col-reverse justify-center mt-8 xl:flex-row xl:mt-32">
                     
                     <div className="space-y-4 md:space-y-12 xl:w-1/2">
-                        <div className="flex justify-center mt-4 xl:justify-start">
-                            <h1 className="text-4xl xl:text-5xl">
-                                Prazer, Sou o
-                                <span className="ml-4 text-sky-300 xl:text-white xl:bg-gradient-to-r from-blue-500 to-sky-300">Bruno</span>
-                            </h1>
-                        </div>
-                        <div>
-                            <p className="text-md text-blue-200 xl:text-lg xl:w-3/4">
-                                Sou um Desenvolvedor com foco em Front-End, que ama criar e desenvolver sites e interfaces.
-                            </p>
+                        <div className="space-y-14 md:space-y-20">
+                            <div className="flex justify-center mt-4 xl:justify-start">
+                                <h1 className="text-4xl xl:text-5xl flex flex-wrap gap-4">
+                                    <span>Prazer,</span> 
+                                    <div className="space-x-4">
+                                        <span>Sou o</span>
+                                        <span className=" text-sky-300 xl:text-white xl:bg-gradient-to-r from-blue-500 to-sky-300">Bruno</span>
+                                    </div>
+                                </h1>
+                            </div>
+                            <div>
+                                <p className="text-md text-blue-200 xl:text-lg xl:w-3/4">
+                                    Sou um Desenvolvedor com foco em Front-End, que ama criar e desenvolver sites e interfaces.
+                                </p>
+                            </div>
                         </div>
                         <div className="flex flex-col-reverse md:flex-row">
                             <div className="flex justify-center md:justify-start xl:ml-4 space-x-4 mt-12 md:mt-0" id="about">
