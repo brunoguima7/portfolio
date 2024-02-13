@@ -23,7 +23,7 @@ export default function Navbar() {
           <Link href="/" onClick={()=> setIsMenuOpen(false)}>
             <Image src="/favicon.ico" alt="Logotipo com as iniciais de Bruno Guimarães." width="50" height="50" unoptimized />
           </Link>
-          <button className="md:hidden rounded-md my-1 fixed right-3" id="menu" onClick={changeMenu}>
+          <button className="md:hidden rounded-md my-2 fixed right-3" id="menu" onClick={changeMenu}>
             <MenuIcon className="fill-white w-10 h-10" />
           </button>
         </div>
@@ -33,7 +33,7 @@ export default function Navbar() {
         </nav>
         {isMenuOpen == true && (
           <div className="flex">
-            <nav className="md:hidden flex flex-col text-lg mb-10 space-y-3 fixed right-4 top-20 text-right">
+            <nav className="md:hidden flex flex-col text-lg mb-10 space-y-4 fixed right-4 top-20 text-right">
               <Link href="/#about" className="text-blue-200" onClick={changeMenu}>Sobre mim</Link>
               <Link href="/contact" className="text-blue-200" onClick={changeMenu}>Contato</Link>
             </nav>
