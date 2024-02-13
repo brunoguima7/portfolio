@@ -57,7 +57,7 @@ export default function Form(){
     function validateMessage(value: string) {
         if (!value.match(/\w/)) { //á fazer
             const err: Error = new Error("Favor digitar a mensagem")
-            err.name = "email"
+            err.name = "message"
             throw err
         }
     }
@@ -91,10 +91,10 @@ export default function Form(){
                             <p className="text-2xl">Contatos</p>
                         </div>
                         <div className="flex flex-col space-y-4">
-                            <div className="flex space-x-3">
+                            <div className="flex space-x-3 justify-center md:justify-start">
                                 <span className="hidden md:flex">E-mail:</span> <a className="text-blue-200" href="mailto:devbrunoguimaraes@gmail.com">devbrunoguimaraes@gmail.com</a>
                             </div>
-                            <div className="flex space-x-3">
+                            <div className="flex space-x-3 justify-center md:justify-start">
                                 <span className="hidden md:flex">Whatsapp:</span> <span className="text-blue-200">+55 11 920002725</span>
                             </div>
                             <div className="flex space-x-4 justify-center">
@@ -108,56 +108,56 @@ export default function Form(){
                     <div className="flex justify-center">
                         <p className="text-2xl md:text-3xl">Contate-me aqui!</p>
                     </div>
-                        <div className="flex justify-center">
-                            <form className="flex flex-col space-y-8 justify-center" onSubmit={sendEmail}>
-                                <div className="flex flex-col">
-                                    <label htmlFor="name" className="text-lg">Seu Nome</label>
-                                    <input
-                                        name="name"
-                                        className="text-slate-400 rounded-md w-72 md:w-[50rem] placeholder-slate-600 bg-slate-950 h-10 my-2 border-2 border-blue-900"
-                                        type="text"
-                                        placeholder="Nome para contato"
-                                        required
-                                        onChange={(ev) => setSenderName(ev)}
-                                    />
-                                </div>
-                                <div className="flex flex-col">
-                                    <label htmlFor="email" className="text-lg">E-mail</label>
-                                    <input
-                                        name="email"
-                                        className="text-slate-400 rounded-md w-72 md:w-[50rem] placeholder-slate-600 bg-slate-950 h-10 my-2 border-2 border-blue-900"
-                                        type="text"
-                                        placeholder="recrutador@email.com"
-                                        required
-                                        onChange={(ev) => setSenderContact(ev)}
-                                    />
-                                </div>
-                                <div className="flex flex-col">
-                                    <label htmlFor="content" className="text-lg">Mensagem</label>
-                                    <textarea
-                                        name="message"
-                                        className="text-slate-400 rounded-md w-72 md:w-[50rem] placeholder-slate-600 bg-slate-950 h-20 my-2 border-2 border-blue-900"
-                                        placeholder="Vamos conversar.."
-                                        required
-                                        onChange={(ev) => setSenderMessage(ev)}
-                                    />
-                                </div>
+                    <div className="flex justify-center">
+                        <form className="flex flex-col space-y-8 justify-center" onSubmit={sendEmail}>
+                            <div className="flex flex-col">
+                                <label htmlFor="name" className="text-lg">Seu Nome</label>
+                                <input
+                                    name="name"
+                                    className="text-slate-400 rounded-md w-72 md:w-[50rem] placeholder-slate-600 bg-slate-950 h-10 my-2 border-2 border-blue-900"
+                                    type="text"
+                                    placeholder="Nome para contato"
+                                    required
+                                    onChange={(ev) => setSenderName(ev)}
+                                />
+                            </div>
+                            <div className="flex flex-col">
+                                <label htmlFor="email" className="text-lg">E-mail</label>
+                                <input
+                                    name="email"
+                                    className="text-slate-400 rounded-md w-72 md:w-[50rem] placeholder-slate-600 bg-slate-950 h-10 my-2 border-2 border-blue-900"
+                                    type="text"
+                                    placeholder="recrutador@email.com"
+                                    required
+                                    onChange={(ev) => setSenderContact(ev)}
+                                />
+                            </div>
+                            <div className="flex flex-col">
+                                <label htmlFor="message" className="text-lg">Mensagem</label>
+                                <textarea
+                                    name="message"
+                                    className="text-slate-400 rounded-md w-72 md:w-[50rem] placeholder-slate-600 bg-slate-950 h-20 my-2 border-2 border-blue-900"
+                                    placeholder="Vamos conversar.."
+                                    required
+                                    onChange={(ev) => setSenderMessage(ev)}
+                                />
+                            </div>
+                            <div className="flex justify-center">
+                                <button className="hover:bg-blue-900 rounded-lg w-44 md:w-[50rem] py-[0.3rem] text-center text-lg bg-[#45C0F6] shadow-lg" type="submit">Enviar</button>
+                            </div>
+                            {error != null && (
                                 <div className="flex justify-center">
-                                    <button className="hover:bg-blue-900 rounded-lg w-44 md:w-[50rem] py-[0.3rem] text-center text-lg bg-[#45C0F6] shadow-lg" type="submit">Enviar</button>
+                                    <span className="text-red-700">{error}</span>
                                 </div>
-                                {error != null && (
-                                    <div className="flex justify-center">
-                                        <span className="text-red-700">{error}</span>
-                                    </div>
-                                )}
-                                {sucessMessage == true && (
-                                    <div className="flex justify-center">
-                                        <p className="text-blue-200">Sua mensagem foi enviada com sucesso, muito obrigado pelo contato!</p>
-                                    </div>
-                                )}
-                                    
-                            </form>
-                        </div>
+                            )}
+                            {sucessMessage == true && (
+                                <div className="flex justify-center">
+                                    <p className="text-blue-200">Sua mensagem foi enviada com sucesso, muito obrigado pelo contato!</p>
+                                </div>
+                            )}
+
+                        </form>
+                    </div>
                 </div>
             </div>
         </>
