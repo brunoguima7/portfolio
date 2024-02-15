@@ -33,8 +33,8 @@ export default function About() {
                                 <Link href="https://www.dropbox.com/scl/fi/y50ymsu9w19zojjwvq41s/Curriculo-Bruno-Guimaraes.pdf?rlkey=z69m193k1gfm1l4i8qc12784i&dl=1" className="hover:bg-sky-300 rounded-xl w-32 py-2 xl:w-40 text-sm xl:text-lg text-center px-4 xl:py-1 drop-shadow-lg border-2 border-sky-300" >Baixar CV</Link>
                             </div>
                             <div className="flex justify-end md:justify-center space-x-5 mr-4 md:ml-8">
-                                <Link href="https://github.com/brunoguima7" target="_blank"><Image className="drop-shadow-2xl" src="/images/github-icon.png" width="35" height="35" alt="Foto de perfil" unoptimized /></Link>
-                                <Link href="https://www.linkedin.com/in/bruno-guimar%C3%A3es-4b6348209/" target="_blank"><Image className="drop-shadow-2xl" src="/images/linkedin-icon.png" width="35" height="35" alt="Foto de perfil" unoptimized /></Link>
+                                <Link href="https://github.com/brunoguima7" target="_blank"><Image className="drop-shadow-2xl hover:opacity-75" src="/images/github-icon.png" width="35" height="35" alt="Foto de perfil" unoptimized /></Link>
+                                <Link href="https://www.linkedin.com/in/bruno-guimar%C3%A3es-4b6348209/" target="_blank"><Image className="drop-shadow-2xl hover:opacity-75" src="/images/linkedin-icon.png" width="35" height="35" alt="Foto de perfil" unoptimized /></Link>
                             </div>
                         </div>
                     </div>
