@@ -84,20 +84,20 @@ export default function Form(){
 
     return (
         <>
-            <div className="mx-12 space-y-20">
+            <div className="mx-10 space-y-12 md:space-y-0">
                 <div className="flex justify-center md:justify-end">
-                    <div className="flex flex-col mt-28 space-y-12">
+                    <div className="flex flex-col mt-24 space-y-10 md:bg-slate-950/25 p-4 rounded-2xl drop-shadow-2xl">
                         <div className="flex justify-center">
                             <p className="text-2xl">Contatos</p>
                         </div>
-                        <div className="flex flex-col gap-5">
-                            <div className="flex flex-col space-y-2 justify-start">
+                        <div className="flex flex-col gap-4">
+                            <div className="flex flex-col space-y-1 justify-start">
                                 <span>E-mail</span> 
-                                <a className="text-blue-200" href="mailto:devbrunoguimaraes@gmail.com">devbrunoguimaraes@gmail.com</a>
+                                <a className="text-blue-200 text-sm" href="mailto:devbrunoguimaraes@gmail.com">devbrunoguimaraes@gmail.com</a>
                             </div>
-                            <div className="flex flex-col space-y-2 justify-start">
+                            <div className="flex flex-col space-y-1 justify-start">
                                 <span>Whatsapp</span> 
-                                <span className="text-blue-200">+55 11 920002725</span>
+                                <span className="text-blue-200 text-sm">+55 11 920002725</span>
                             </div>
                             <div className="flex flex-col justify-center mt-4 space-y-4">
                                 <div className="flex justify-center">
@@ -111,12 +111,15 @@ export default function Form(){
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col space-y-12">
+                <div className="flex justify-center md:hidden">
+                    <span className="text-2xl text-blue-200">Ou</span>
+                </div>
+                <div className="flex flex-col space-y-10">
                     <div className="flex justify-center">
-                        <p className="text-2xl md:text-3xl">Contate-me aqui!</p>
+                        <p className="text-2xl md:text-3xl">Contate-me aqui</p>
                     </div>
                     <div className="flex justify-center">
-                        <form className="flex flex-col space-y-8 justify-center" onSubmit={sendEmail}>
+                        <form className="flex flex-col space-y-6 justify-center" onSubmit={sendEmail}>
                             <div className="flex flex-col">
                                 <label htmlFor="name" className="text-lg">Seu Nome</label>
                                 <input
