@@ -17,12 +17,14 @@ https://www.brunoguimaraesdev.site
 
 Ou instalar o projeto:
 
+Abra o terminal no projeto ja instalado e depois execute:
+
 npm run dev
-# ou
+### ou
 yarn dev
-# ou
+### ou
 pnpm dev
-# ou
+### ou
 bun dev
 
-Depois abra http://localhost:3000
+Depois visite http://localhost:3000
