@@ -17,7 +17,7 @@ https://www.brunoguimaraesdev.site
 
 Ou instalar o projeto:
 
-Abra o terminal no projeto ja instalado e depois execute:
+Abra o terminal no projeto já instalado e depois execute:
 
 npm run dev
 ### ou
