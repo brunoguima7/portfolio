@@ -70,6 +70,8 @@ export default function About() {
                             junto ao React e aos Principais frameworks e bibliotecas como Next, Node, Tailwind e etc... Além da
                             plena utilização de ferramentas de versionamento de código, integração de APIs e Bancos de dados.
                         </p>
+                        <div id="portfolio">
+                        </div>
                     </div>
                 </div>
             </div>

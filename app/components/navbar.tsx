@@ -29,6 +29,7 @@ export default function Navbar() {
           </button>
         </div>
         <nav className="hidden md:flex gap-5 text-lg">
+          <Link href="/#portfolio" className="hover:text-slate-300 rounded-lg w-36 text-center px-4 py-1 my-2">Projetos</Link>
           <Link href="/#about" className="hover:text-slate-300 rounded-lg w-36 text-center px-4 py-1 my-2">Sobre mim</Link>
           <Link href="/contact" className="hover:bg-blue-900 rounded-lg w-32 text-center px-4 py-1 bg-[#45C0F6] my-2 shadow-lg mr-12">Contato</Link>
         </nav>

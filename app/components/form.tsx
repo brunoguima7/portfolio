@@ -86,20 +86,27 @@ export default function Form(){
         <>
             <div className="mx-12 space-y-20">
                 <div className="flex justify-center md:justify-end">
-                    <div className="flex flex-col mt-28 space-y-8">
+                    <div className="flex flex-col mt-28 space-y-12">
                         <div className="flex justify-center">
                             <p className="text-2xl">Contatos</p>
                         </div>
-                        <div className="flex flex-col gap-4">
-                            <div className="flex space-x-3 justify-center md:justify-start">
-                                <span className="hidden md:flex">E-mail:</span> <a className="text-blue-200" href="mailto:devbrunoguimaraes@gmail.com">devbrunoguimaraes@gmail.com</a>
+                        <div className="flex flex-col gap-5">
+                            <div className="flex flex-col space-y-2 justify-start">
+                                <span>E-mail</span> 
+                                <a className="text-blue-200" href="mailto:devbrunoguimaraes@gmail.com">devbrunoguimaraes@gmail.com</a>
                             </div>
-                            <div className="flex space-x-3 justify-center md:justify-start">
-                                <span className="hidden md:flex">Whatsapp:</span> <span className="text-blue-200">+55 11 920002725</span>
+                            <div className="flex flex-col space-y-2 justify-start">
+                                <span>Whatsapp</span> 
+                                <span className="text-blue-200">+55 11 920002725</span>
                             </div>
-                            <div className="flex space-x-4 justify-center mt-2">
-                                <Link href="https://github.com/brunoguima7" target="_blank"><Image className="drop-shadow-2xl" src="/images/github-icon.png" width="35" height="35" alt="Foto de perfil" unoptimized /></Link>
-                                <Link href="https://www.linkedin.com/in/bruno-guimar%C3%A3es-4b6348209/" target="_blank"><Image className="drop-shadow-2xl" src="/images/linkedin-icon.png" width="35" height="35" alt="Foto de perfil" unoptimized /></Link>
+                            <div className="flex flex-col justify-center mt-4 space-y-4">
+                                <div className="flex justify-center">
+                                    <span>Conecte-se comigo:</span>
+                                </div>
+                                <div className="flex justify-center space-x-4">
+                                    <Link href="https://github.com/brunoguima7" target="_blank"><Image className="drop-shadow-2xl" src="/images/github-icon.png" width="32" height="32" alt="Foto de perfil" unoptimized /></Link>
+                                    <Link href="https://www.linkedin.com/in/bruno-guimar%C3%A3es-4b6348209/" target="_blank"><Image className="drop-shadow-2xl" src="/images/linkedin-icon.png" width="32" height="32" alt="Foto de perfil" unoptimized /></Link>
+                                </div>
                             </div>
                         </div>
                     </div>

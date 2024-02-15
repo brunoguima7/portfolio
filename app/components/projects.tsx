@@ -1,21 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
 
-interface Image {
-    url: string,
-    alt: string,
-}
-
-interface Project {
-    slug: string,
-    name: string,
-    image: Image,
-}
-
-interface ProjectsProps {
-    projects: Project[]
-}
-
 export default function Projects({projects}: ProjectsProps) {
 
  return (
