@@ -1,6 +1,6 @@
 # Bruno Guimarães Dev - Portfolio 
 
-Esse é o meu Portfolio, criado exclusivamente por mim. Nele você encontrará meus projetos recentes mais significativos e também a oportunidade de me contatar via e-mail, além também da opçao de baixar o meu currículo. 
+Esse é o meu Portfolio, criado exclusivamente por mim. Nele você encontrará meus projetos recentes mais significativos e também a oportunidade de me contatar via e-mail, além da opçao de baixar o meu currículo. 
 
 ## Techs utilizadas
 
