@@ -9,8 +9,7 @@ export default function About() {
         <>
             <div className="flex flex-col space-y-12 justify-center mx-12 mt-28 xl:mx-16">
                 <div className="flex flex-col-reverse justify-center mt-8 xl:flex-row xl:mt-32">
-                    
-                    <div className="space-y-4 md:space-y-12 xl:w-1/2">
+                    <div className="space-y-4 md:space-y-12 xl:w-2/5">
                         <div className="space-y-14 md:space-y-20">
                             <div className="flex justify-center mt-4 xl:justify-start">
                                 <h1 className="text-4xl xl:text-5xl flex flex-wrap gap-4">
@@ -40,7 +39,7 @@ export default function About() {
                     </div>
                     <div className="flex flex-col">
                         <div className="flex justify-center">
-                            <Image className="rounded-full drop-shadow-2xl mb-8" src="/images/perfil.png" width="250" height="250" alt="Foto de perfil" unoptimized />
+                            <Image className="rounded-full drop-shadow-2xl mb-8" src="/images/pfp.png" width="250" height="250" alt="Foto de perfil" unoptimized />
                         </div>
                     </div>
                 </div>

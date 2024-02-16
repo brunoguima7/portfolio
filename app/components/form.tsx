@@ -105,7 +105,7 @@ export default function Form(){
                                 </div>
                                 <div className="flex justify-center space-x-4">
                                     <Link href="https://github.com/brunoguima7" target="_blank"><Image className="drop-shadow-2xl hover:opacity-75" src="/images/github-icon.png" width="32" height="32" alt="Foto de perfil" unoptimized /></Link>
-                                    <Link href="https://www.linkedin.com/in/bruno-guimar%C3%A3es-4b6348209/" target="_blank"><Image className="drop-shadow-2xl hover:opacity-75" src="/images/linkedin-icon.png" width="32" height="32" alt="Foto de perfil" unoptimized /></Link>
+                                    <Link href="https://www.linkedin.com/in/bruno-guimar%C3%A3es-4b6348209/" target="_blank"><Image className="drop-shadow-2xl hover:opacity-75 " src="/images/linkedin-icon.png" width="32" height="32" alt="Foto de perfil" unoptimized /></Link>
                                 </div>
                             </div>
                         </div>
