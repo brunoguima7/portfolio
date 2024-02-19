@@ -37,7 +37,7 @@ export default function Navbar() {
           <div className="flex">
             <nav className="md:hidden flex flex-col text-lg mb-10 space-y-5 fixed right-4 top-20 text-right">
               <Link href="/#about" className="text-blue-200" onClick={changeMenu}>Sobre mim</Link>
-              <Link href="/#portfolio" className="text-blue-200">Projetos</Link>
+              <Link href="/#portfolio" className="text-blue-200" onClick={changeMenu}>Projetos</Link>
               <Link href="/contact" className="text-blue-200" onClick={changeMenu}>Contato</Link>
             </nav>
           </div>
