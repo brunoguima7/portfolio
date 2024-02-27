@@ -47,8 +47,8 @@ export default function About() {
                     <h1 className="text-3xl xl:text-5xl mt-12 xl:mt-40 xl:mb-16">Sobre Mim</h1>
                 </div>
                 <div className="flex flex-col xl:flex-row justify-center xl:space-x-12">
-                    <div className="flex itens-stretch">
-                        <ul className="hidden xl:flex self-center flex-wrap space-x-3 text-center justify-center w-60">
+                    <div className="flex items-center">
+                        <ul className="hidden xl:flex flex-wrap space-x-3 text-center justify-center w-60">
                             <li className="text-black bg-yellow-400 w-28 drop-shadow-lg rounded-md ml-3 my-2">javascript</li>
                             <li className="text-white bg-sky-600 w-28 drop-shadow-lg rounded-md my-2">typescript</li>
                             <li className="text-black bg-cyan-400 w-24 drop-shadow-lg rounded-md my-2">react.js</li>
@@ -58,17 +58,23 @@ export default function About() {
                             <li className="text-cyan-400 bg-white w-32 drop-shadow-lg rounded-md my-2">tailwind.css</li>
                         </ul>
                     </div>
-                    <div className="text-md text-blue-200 xl:text-lg xl:w-3/5 space-y-8 xl:space-y-16">
-                        <p>
-                            Sou um Desenvolvedor Front-End Formado em Análise e Desenvolvimento de Sistemas, e estou atualmente
-                            trabalhando em projetos autônomos com o objetivo de aprimorar minhas habilidades e conseguir minha
-                            primeira vaga nessa incrível área da Programação.
-                        </p>
-                        <p>
-                            Estudo desde o primeiro semestre de 2022, focado no desenvolvimento Web com JavaScript/Typescript,
-                            junto ao React e aos Principais frameworks e bibliotecas como Next, Node, Tailwind e etc... Além da
-                            plena utilização de ferramentas de versionamento de código, integração de APIs e Bancos de dados.
-                        </p>
+                    <div className="flex items-stretch text-md text-blue-200 xl:text-lg xl:w-3/5 space-y-8 xl:space-y-16">
+                        <div className="self-center space-y-10 my-10">
+                            <div>
+                                <p>
+                                    Sou um Desenvolvedor Front-End Formado em Análise e Desenvolvimento de Sistemas, e estou atualmente
+                                    trabalhando em projetos autônomos com o objetivo de aprimorar minhas habilidades e conseguir minha
+                                    primeira vaga nessa incrível área da Programação.
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    Estudo desde o primeiro semestre de 2022, focado no desenvolvimento Web com JavaScript/Typescript,
+                                    junto ao React e aos Principais frameworks e bibliotecas como Next, Node, Tailwind e etc... Além da
+                                    plena utilização de ferramentas de versionamento de código, integração de APIs e Bancos de dados.
+                                </p>
+                            </div>
+                        </div>
                         <div id="portfolio">
                         </div>
                     </div>
