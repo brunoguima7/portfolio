@@ -84,7 +84,7 @@ export default function Form(){
 
     return (
         <>
-            <div className="mx-10 space-y-12 md:space-y-0">
+            <div className="mx-6 md:mx-10 space-y-12 md:space-y-0">
                 <div className="flex justify-center md:justify-end">
                     <div className="flex flex-col mt-24 space-y-10 md:bg-slate-950/25 p-4 rounded-2xl drop-shadow-2xl">
                         <div className="flex justify-center">
@@ -119,7 +119,7 @@ export default function Form(){
                         <p className="text-2xl md:text-3xl">Contate-me aqui</p>
                     </div>
                     <div className="flex justify-center">
-                        <form className="flex flex-col space-y-6 justify-center" onSubmit={sendEmail}>
+                        <form className="flex flex-col space-y-6 rounded-3xl w-8[19rem] md:w-[49rem] p-4 md:p-8 drop-shadow-2xl" id="container" onSubmit={sendEmail}>
                             <div className="flex flex-col">
                                 <label htmlFor="name" className="text-lg">Seu Nome</label>
                                 <input

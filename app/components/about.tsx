@@ -7,8 +7,8 @@ export default function About() {
 
     return (
         <>
-            <div className="flex flex-col space-y-12 justify-center mx-12 mt-28 xl:mx-16">
-                <div className="flex flex-col-reverse justify-center mt-8 xl:flex-row xl:mt-32">
+            <div className="flex flex-col space-y-12 justify-center mx-12 xl:mx-16">
+                <div className="flex flex-col-reverse justify-center xl:flex-row mt-32 xl:mt-52">
                     <div className="space-y-4 md:space-y-12 xl:w-2/5">
                         <div className="space-y-14 md:space-y-20">
                             <div className="flex justify-center mt-4 xl:justify-start">
@@ -44,25 +44,22 @@ export default function About() {
                     </div>
                 </div>
                 <div className="text-center">
-                    <h1 className="text-3xl xl:text-5xl mt-12 xl:mt-40 xl:mb-16">Sobre Mim</h1>
+                    <h1 className="text-3xl xl:text-5xl mt-12 md:mt-20 xl:mt-32">Sobre Mim</h1>
                 </div>
                 <div className="flex flex-col-reverse xl:flex-row justify-center xl:space-x-12">
                     <div className="flex items-center justify-center">
-                        <ul className="flex flex-wrap space-x-3 text-center justify-center md:w-60">
-                            <li className="text-black bg-yellow-400 w-28 drop-shadow-lg rounded-md md:ml-3 my-2">javascript</li>
+                        <ul className="flex flex-wrap gap-x-3 text-center justify-center md:w-60">
+                            <li className="text-black bg-yellow-400 w-28 drop-shadow-lg rounded-md md:mx-3 my-2">javascript</li>
                             <li className="text-white bg-sky-600 w-28 drop-shadow-lg rounded-md my-2">typescript</li>
                             <li className="text-black bg-cyan-400 w-20 drop-shadow-lg rounded-md my-2">react</li>
                             <li className="text-white bg-black w-20 drop-shadow-lg rounded-md my-2">next.js</li>
                             <li className="text-white bg-orange-600 drop-shadow-lg w-16 rounded-md my-2">html</li>
                             <li className="text-white bg-blue-700 w-14 drop-shadow-lg rounded-md my-2">css</li>
-                            <li className="text-cyan-400 bg-white w-28 drop-shadow-lg rounded-md my-2">tailwind</li>
+                            <li className="text-cyan-400 bg-white w-28 drop-shadow-lg rounded-md my-2" id="portfolio">tailwind</li>
                         </ul>
                     </div>
-                    <div>
-                        <p className="xl:hidden text-center text-2xl mb-8">Tecnologias</p>
-                    </div>
-                    <div className="flex items-stretch text-md text-blue-200 xl:text-lg xl:w-3/5 space-y-8 xl:space-y-16">
-                        <div className="self-center space-y-10 mb-10 xl:my-10">
+                    <div className="flex items-stretch text-md text-blue-200 xl:text-lg xl:w-3/5">
+                        <div className="self-center space-y-10 mb-10 xl:my-12">
                             <div>
                                 <p>
                                     Sou um Desenvolvedor Front-End Formado em Análise e Desenvolvimento de Sistemas, e estou atualmente
@@ -77,8 +74,6 @@ export default function About() {
                                     plena utilização de ferramentas de versionamento de código, integração de APIs e Bancos de dados.
                                 </p>
                             </div>
-                        </div>
-                        <div id="portfolio">
                         </div>
                     </div>
                 </div>

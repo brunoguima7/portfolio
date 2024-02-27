@@ -25,7 +25,7 @@ export default function Page() {
 
     return (
         <>
-            <div className="space-y-20 md:space-y-40">
+            <div>
                 <About />
                 <Projects projects={projects} />
             </div>
