@@ -31,7 +31,7 @@ export default function Navbar() {
                 <nav className="hidden md:flex gap-10 itens-stretch">
                     <Link href="/#portfolio" className="hover:text-slate-300 rounded-lg text-center py-1 self-center">Projetos</Link>
                     <Link href="/#about" className="hover:text-slate-300 rounded-lg text-center py-1 self-center">Sobre mim</Link>
-                    <Link href="/contact" className="hover:bg-blue-900 rounded-lg w-32 text-center px-4 py-1 bg-[#45C0F6] shadow-lg ml-4 mr-12 text-lg self-center">Contato</Link>
+                    <Link href="/contact" className="rounded-lg w-32 text-center px-4 py-1 bg-gradient-to-r from-blue-500 to-sky-300 hover:from-blue-600 hover:to-sky-400 shadow-lg ml-4 mr-12 text-lg self-center">Contato</Link>
                 </nav>
                 {isMenuOpen == true && (
                     <div className="flex">
