@@ -28,7 +28,7 @@ export default function About() {
                         </div>
                         <div className="flex flex-col-reverse md:flex-row">
                             <div className="flex justify-center md:justify-start xl:ml-4 space-x-4 mt-12 md:mt-0" id="about">
-                                <Link href="/contact" className="bg-gradient-to-r from-blue-500 to-sky-300 hover:from-blue-600 hover:to-sky-400 rounded-xl w-32 py-2 xl:w-36 text-sm xl:text-lg text-center px-4 xl:py-1 drop-shadow-lg border-2 border-slate-950" >Contate-me</Link>
+                                <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-sky-400 hover:from-blue-500 hover:to-sky-300 rounded-xl w-32 py-2 xl:w-36 text-sm xl:text-lg text-center px-4 xl:py-1 drop-shadow-lg border-2 border-slate-950" >Contate-me</Link>
                                 <Link href="https://www.dropbox.com/scl/fi/y50ymsu9w19zojjwvq41s/Curriculo-Bruno-Guimaraes.pdf?rlkey=z69m193k1gfm1l4i8qc12784i&dl=1" className="hover:bg-sky-300 rounded-xl w-32 py-2 xl:w-36 text-sm xl:text-lg text-center px-4 xl:py-1 drop-shadow-lg border-2 border-sky-300" >Baixar CV</Link>
                             </div>
                             <div className="flex justify-end md:justify-center space-x-5 mr-4 md:ml-8">

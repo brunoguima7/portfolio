@@ -28,6 +28,10 @@ button {
   background: linear-gradient(90deg, rgba(0, 0, 35) 0%, rgb(4, 6, 51) 60%, rgb(9, 17, 100) 100%);
 }
 
+#card {
+  background: linear-gradient(90deg, rgba(0, 0, 35) 0%, rgb(4, 6, 51) 60%, rgb(4, 10, 70) 100%);
+}
+
 .no-scrollbar::-webkit-scrollbar{
   -md-overflow-style: none;
   scrollbar-width: none;

@@ -9,12 +9,14 @@ interface Image {
 interface Project {
     link: string,
     name: string,
+    description: string,
+    github: string
     image: Image,
 }
 
 export default async function Projects() {
 
-    const res = await fetch("https://gist.githubusercontent.com/brunoguima7/d82c83f155e8757f8591819e4d028b24/raw/9c6a19122565d452d586b1fac641a4e9040e1b5f/projects.json")
+    const res = await fetch("https://gist.githubusercontent.com/brunoguima7/d82c83f155e8757f8591819e4d028b24/raw/0503a81d69b5833871bffe06539f6f43182e48f4/projects.json")
 
     const project: Project[] = await res.json()
 
@@ -23,24 +25,56 @@ export default async function Projects() {
             <div className="flex flex-col space-y-14 mt-24 md:mt-32 md:space-y-24 md:ml-20 xl:ml-36">
                 <h2 className="text-center md:text-start text-3xl xl:text-5xl">Projetos Recentes</h2>
                 <ul className="flex flex-col flex-wrap md:flex-row gap-x-20 justify-center md:justify-start space-y-12 md:space-y-0">
-                    {project.map(({ link, name, image }, index) => (
-                        <Link href={link} key={name + index}>
-                            <li className="space-y-2">
+                    {project.map(({ link, name, description, github, image }, index) => (
+                        <Link href={link} target="_blank" key={name + index}>
+                            <li className="space-y-2 p-3 rounded-2xl w-[17rem] h-[22rem] mx-auto md:mx-0 border border-blue-950" id="card">
                                 <div className="flex justify-center">
                                     <Image
                                         src={image.url}
                                         alt={image.alt}
-                                        width="300"
-                                        height="300"
-                                        className="rounded-2xl xl:hover:blur"
+                                        width="250"
+                                        height="250"
+                                        className="rounded-lg"
                                     />
                                 </div>
-                                <div className="text-center">
+                                <div className="ml-2">
                                     <span className="text-lg">{name}</span>
+                                </div>
+                                <div className="ml-2">
+                                    <span className="text-sm text-slate-400">{description}</span>
+                                </div>
+                                <div className="flex justify-end">
+                                    <Link href={github} target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" className="py-1 px-3 mx-4 mt-6 text-slate-300 rounded-lg bg-gradient-to-r from-blue-600 to-sky-400 hover:from-blue-500 hover:to-sky-300">
+                                            <path d="m18 16 4-4-4-4" />
+                                            <path d="m6 8-4 4 4 4" /><path d="m14.5 4-5 16" />
+                                        </svg>
+                                    </Link>
                                 </div>
                             </li>
                         </Link>
                     ))}
+                    <div>
+                        <li className="space-y-2 mx-auto md:mx-0">
+                            <div className="flex justify-center">
+                                <div className="flex flex-col h-[22rem] w-[17rem] rounded-2xl border border-blue-950" id="card">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="245" height="140" viewBox="0 0 24 24" fill="none" stroke="#10174c" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" className="self-center mx-16 mt-3 mb-2 rounded-xl bg-blue-900 bg-opacity-10">
+                                        <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" />
+                                        <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" /><path d="M12 2v2" />
+                                        <path d="M12 22v-2" /><path d="m17 20.66-1-1.73" /><path d="M11 10.27 7 3.34" />
+                                        <path d="m20.66 17-1.73-1" /><path d="m3.34 7 1.73 1" /><path d="M14 12h8" /><path d="M2 12h2" />
+                                        <path d="m20.66 7-1.73 1" /><path d="m3.34 17 1.73-1" /><path d="m17 3.34-1 1.73" />
+                                        <path d="m11 13.73-4 6.93" />
+                                    </svg>
+                                    <div>
+                                        <span className="text-md ml-5">Projeto em construção... </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
                 </ul>
             </div>
         </>
