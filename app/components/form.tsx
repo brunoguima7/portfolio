@@ -119,7 +119,7 @@ export default function Form(){
                         <p className="text-2xl md:text-3xl">Contate-me aqui</p>
                     </div>
                     <div className="flex justify-center">
-                        <form className="flex flex-col space-y-6 rounded-3xl w-8[19rem] md:w-[49rem] p-4 md:p-8 drop-shadow-2xl" id="container" onSubmit={sendEmail}>
+                        <form className="flex flex-col space-y-6 rounded-3xl w-8[19rem] md:w-[49rem] p-4 md:p-8 drop-shadow-2xl border border-blue-950" id="container" onSubmit={sendEmail}>
                             <div className="flex flex-col">
                                 <label htmlFor="name" className="text-lg">Seu Nome</label>
                                 <input
