@@ -5,18 +5,22 @@ interface Image {
     url: string,
     alt: string,
 }
-
+interface Tech {
+    name: string
+}
+   
 interface Project {
     link: string,
     name: string,
     description: string,
     github: string
+    techs: Tech[],
     image: Image,
 }
 
 export default async function Projects() {
 
-    const res = await fetch("https://gist.githubusercontent.com/brunoguima7/d82c83f155e8757f8591819e4d028b24/raw/0503a81d69b5833871bffe06539f6f43182e48f4/projects.json")
+    const res = await fetch("https://gist.githubusercontent.com/brunoguima7/d82c83f155e8757f8591819e4d028b24/raw/37a535b4667111b77d85e549fd4542396a559179/projects.json")
 
     const project: Project[] = await res.json()
 
@@ -25,8 +29,8 @@ export default async function Projects() {
             <div className="flex flex-col space-y-14 mt-24 md:mt-32 md:space-y-24 md:ml-20 xl:ml-36">
                 <h2 className="text-center md:text-start text-3xl xl:text-5xl">Projetos Recentes</h2>
                 <ul className="flex flex-col flex-wrap md:flex-row gap-x-20 justify-center md:justify-start space-y-12 md:space-y-0">
-                    {project.map(({ link, name, description, github, image }, index) => (
-                        <Link href={link} target="_blank" key={name + index}>
+                    {project.map(({ link, name, description, techs, github, image }, index) => (
+                        <Link href={link} target="_blank" key={name + index} className="relative">
                             <li className="space-y-2 p-3 rounded-2xl w-[17rem] h-[22rem] mx-auto md:mx-0 border border-blue-950" id="card">
                                 <div className="flex justify-center">
                                     <Image
@@ -43,10 +47,19 @@ export default async function Projects() {
                                 <div className="ml-2">
                                     <span className="text-sm text-slate-400">{description}</span>
                                 </div>
-                                <div className="flex justify-end">
+                                <div className="flex justify-between mx-2">
+                                    <div className="flex flex-col absolute bottom-4 left-4">
+                                        <div className="flex space-x-2">
+                                            {techs.map(({ name }, index) => (
+                                                <div key={name + index}>
+                                                    <Image src={`/logos/${name}.png`} alt="" width="24" height="24"/>
+                                                </div> 
+                                            ))}         
+                                        </div>
+                                    </div>
                                     <Link href={github} target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" className="py-1 px-3 mx-4 mt-6 text-slate-300 rounded-lg bg-gradient-to-r from-blue-600 to-sky-400 hover:from-blue-500 hover:to-sky-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" className="py-1 px-2 text-slate-300 rounded-lg bg-gradient-to-r from-blue-600 to-sky-400 hover:from-blue-500 hover:to-sky-300 absolute bottom-4 right-4">
                                             <path d="m18 16 4-4-4-4" />
                                             <path d="m6 8-4 4 4 4" /><path d="m14.5 4-5 16" />
                                         </svg>
