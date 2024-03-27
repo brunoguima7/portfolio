@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 interface Image {
-    url: string,
+    url: string, 
     alt: string,
 }
 interface Tech {
