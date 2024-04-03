@@ -28,7 +28,7 @@ export default async function Projects() {
         <>
             <div className="flex flex-col space-y-14 mt-24 md:mt-32 md:space-y-24 md:ml-20 xl:ml-36">
                 <h2 className="text-center md:text-start text-3xl xl:text-5xl">Projetos Recentes</h2>
-                <ul className="flex flex-col flex-wrap md:flex-row gap-x-20 justify-center md:justify-start space-y-12 md:space-y-0">
+                <ul className="flex flex-col flex-wrap md:flex-row gap-20 justify-center md:justify-start">
                     {project.map(({ link, name, description, techs, github, image }, index) => (
                         <Link href={link} target="_blank" key={name + index}>
                             <li className="space-y-2 p-3 rounded-2xl w-[17rem] h-[22rem] mx-auto md:mx-0 border border-blue-950 relative" id="card">
