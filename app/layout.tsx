@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
     return (
         <>
-            <html lang="en" className={`${jetBrains.className} !scroll-smooth overflow-y-scroll no-scrollbar`}>
+            <html lang="en" className={`${jetBrains.className} !scroll-smooth`}>
                 <body className="mb-20">
                     <Navbar />
                     {children}
