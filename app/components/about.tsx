@@ -43,7 +43,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col space-y-16 md:space-y-32 bg-black bg-opacity-50 px-12 py-16 md:py-[25vh] h-110 md:h-[100vh]" id="about">
+                <div className="flex flex-col space-y-16 md:space-y-32 bg-black bg-opacity-50 px-12 pb-16 pt-24 md:py-[25vh] h-110 md:h-[100vh]" id="about">
                     <div className="text-center">
                         <h1 className="text-3xl xl:text-5xl">Sobre Mim</h1>
                     </div>
