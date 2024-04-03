@@ -84,7 +84,7 @@ export default function Form(){
 
     return (
         <>
-            <div className="mx-6 md:mx-10 space-y-12 md:space-y-0">
+            <div className="mx-6 md:mx-10 space-y-12 md:space-y-0 mb-20">
                 <div className="flex justify-center md:justify-end">
                     <div className="flex flex-col mt-24 space-y-10 md:bg-slate-950/25 p-4 rounded-2xl drop-shadow-2xl">
                         <div className="flex justify-center">

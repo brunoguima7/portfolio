@@ -26,7 +26,7 @@ export default async function Projects() {
 
     return (
         <>
-            <div className="flex flex-col space-y-14 mt-24 md:mt-32 md:space-y-24 md:ml-20 xl:ml-36">
+            <div className="flex flex-col space-y-14 py-16 md:py-32 md:space-y-24 md:ml-20 xl:ml-36" id="portfolio">
                 <h2 className="text-center md:text-start text-3xl xl:text-5xl">Projetos Recentes</h2>
                 <ul className="flex flex-col flex-wrap md:flex-row gap-20 justify-center md:justify-start">
                     {project.map(({ link, name, description, techs, github, image }, index) => (
