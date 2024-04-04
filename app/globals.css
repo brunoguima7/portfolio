@@ -36,3 +36,14 @@ button {
   -md-overflow-style: none;
   scrollbar-width: none;
 }
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #020730;
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #0355c7;
+  border-radius: 8px;
+}
