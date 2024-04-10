@@ -14,9 +14,9 @@ export default function About() {
                             <div className="flex justify-center xl:justify-start">
                                 <h1 className="text-4xl xl:text-5xl flex flex-wrap gap-4">
                                     <span>Prazer,</span> 
-                                    <div className="space-x-4">
+                                    <div className="space-x-5 md:space-x-7">
                                         <span>Sou o</span>
-                                        <span className=" text-sky-300 xl:text-white xl:bg-gradient-to-r from-blue-500 to-sky-300">Bruno</span>
+                                        <span className="max-md:bg-clip-text text-transparent md:text-white bg-gradient-to-r from-blue-500 to-cyan-300">Bruno</span>
                                     </div>
                                 </h1>
                             </div>
