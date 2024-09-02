@@ -39,7 +39,7 @@ export default function About() {
                     </div>
                     <div className="flex flex-col">
                         <div className="flex justify-center pt-12 mb-16 md:pt-0">
-                            <Image className="rounded-full drop-shadow-2xl" src="/images/pfp.png" width="250" height="250" alt="Foto de perfil" unoptimized />
+                            <Image className="rounded-full drop-shadow-2xl" src="/images/pfp.jpeg" width="250" height="250" alt="Foto de perfil" unoptimized />
                         </div>
                     </div>
                 </div>
