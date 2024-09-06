@@ -8,7 +8,7 @@ export default function About() {
     return (
         <>
             <div className="flex flex-col justify-center">
-                <div className="flex flex-col-reverse justify-center xl:flex-row py-16 md:py-[35vh] px-12 md:px-0 md:h-[100vh]">
+                <div className="flex flex-col-reverse justify-center xl:flex-row py-16 md:pt-64 md:pb-48 px-12 md:px-0">
                     <div className="md:space-y-12 xl:w-2/5">
                         <div className="space-y-8 md:space-y-20">
                             <div className="flex justify-center xl:justify-start">
@@ -39,11 +39,11 @@ export default function About() {
                     </div>
                     <div className="flex flex-col">
                         <div className="flex justify-center pt-12 mb-16 md:pt-0">
-                            <Image className="rounded-full drop-shadow-2xl" src="/images/pfp.jpeg" width="250" height="250" alt="Foto de perfil" unoptimized />
+                            <Image className="rounded-full drop-shadow-2xl" src="/images/pfp.jpeg" width="270" height="270" alt="Foto de perfil" unoptimized />
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col space-y-16 md:space-y-32 bg-black bg-opacity-50 px-12 pb-16 pt-24 md:py-[25vh] h-110 md:h-[100vh]" id="about">
+                <div className="flex flex-col space-y-16 md:space-y-32 bg-black bg-opacity-50 px-12 pb-16 pt-24 md:py-28" id="about">
                     <div className="text-center">
                         <h1 className="text-3xl xl:text-5xl">Sobre Mim</h1>
                     </div>
