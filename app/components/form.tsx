@@ -84,8 +84,8 @@ export default function Form(){
 
     return (
         <>
-            <div className="flex flex-col md:flex-row-reverse mx-6 md:mx-10 space-y-12 md:space-y-0 mb-20">
-                <div className="flex justify-center md:justify-end">
+            <div className="flex flex-col xl:flex-row-reverse mx-6 md:mx-10 space-y-12 xl:space-y-0 mb-20 xl:h-[84vh]">
+                <div className="flex justify-center md:justify-end h-[425px]">
                     <div className="flex flex-col mt-24 space-y-10 md:bg-slate-950/25 p-4 rounded-2xl drop-shadow-2xl">
                         <div className="flex justify-center">
                             <p className="text-2xl">Contatos</p>
@@ -114,18 +114,18 @@ export default function Form(){
                 <div className="flex justify-center md:hidden">
                     <span className="text-2xl text-blue-200">Ou</span>
                 </div>
-                <div className="md:absolute md:left-1/3 md:right-1/3 pt-32">
+                <div className="xl:absolute xl:left-1/3 xl:right-1/3 xl:pt-32">
                     <div className="flex flex-col space-y-10">
                         <div className="flex justify-center">
                             <p className="text-2xl md:text-3xl">Contate-me aqui</p>
                         </div>
                         <div className="flex justify-center">
-                            <form className="flex flex-col space-y-6 rounded-3xl w-8[19rem] md:w-[49rem] p-4 md:p-8 drop-shadow-2xl border border-blue-950" id="container" onSubmit={sendEmail}>
+                            <form className="flex flex-col space-y-6 rounded-3xl max-[1280px]:w-[40rem] max-[7680px]:w-[50rem] p-4 md:p-8 drop-shadow-2xl border border-blue-950" id="container" onSubmit={sendEmail}>
                                 <div className="flex flex-col">
                                     <label htmlFor="name" className="text-lg">Seu Nome</label>
                                     <input
                                         name="name"
-                                        className="text-slate-400 rounded-md w-72 md:w-[45rem] placeholder-slate-600 bg-slate-950 h-10 my-2 border-2 border-blue-900"
+                                        className="text-slate-400 rounded-md w-72 max-[1280px]:w-[36rem] max-[7680px]:w-[45rem] placeholder-slate-600 bg-slate-950 h-10 my-2 border-2 border-blue-900"
                                         type="text"
                                         placeholder="Nome para contato"
                                         required
@@ -136,7 +136,7 @@ export default function Form(){
                                     <label htmlFor="email" className="text-lg">E-mail</label>
                                     <input
                                         name="email"
-                                        className="text-slate-400 rounded-md w-72 md:w-[45rem] placeholder-slate-600 bg-slate-950 h-10 my-2 border-2 border-blue-900"
+                                        className="text-slate-400 rounded-md w-72 max-[1280px]:w-[36rem] max-[7680px]:w-[45rem] placeholder-slate-600 bg-slate-950 h-10 my-2 border-2 border-blue-900"
                                         type="text"
                                         placeholder="recrutador@email.com"
                                         required
@@ -147,7 +147,7 @@ export default function Form(){
                                     <label htmlFor="message" className="text-lg">Mensagem</label>
                                     <textarea
                                         name="message"
-                                        className="text-slate-400 rounded-md w-72 md:w-[45rem] placeholder-slate-600 bg-slate-950 h-20 my-2 border-2 border-blue-900"
+                                        className="text-slate-400 rounded-md w-72 max-[1280px]:w-[36rem] max-[7680px]:w-[45rem] placeholder-slate-600 bg-slate-950 h-20 my-2 border-2 border-blue-900"
                                         placeholder="Vamos conversar.."
                                         required
                                         onChange={(ev) => setSenderMessage(ev)}
