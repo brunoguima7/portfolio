@@ -21,7 +21,7 @@ interface Project {
 
 export default async function Projects() {
 
-    const res = await fetch("https://gist.github.com/brunoguima7/d82c83f155e8757f8591819e4d028b24.js")
+    const res = await fetch("https://gist.githubusercontent.com/brunoguima7/d82c83f155e8757f8591819e4d028b24/raw/276d3bb8b2905acbf8a6e7c8f8b5b1e6e8c0935e/projects.json")
 
     const project: Project[] = await res.json()
 
