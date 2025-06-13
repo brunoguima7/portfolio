@@ -5,6 +5,7 @@ interface Image {
     url: string, 
     alt: string,
 }
+
 interface Tech {
     name: string
 }
@@ -20,7 +21,7 @@ interface Project {
 
 export default async function Projects() {
 
-    const res = await fetch("https://gist.githubusercontent.com/brunoguima7/d82c83f155e8757f8591819e4d028b24/raw/9ba0aa7e6629f14b373abf6378f73e3b8482712a/projects.json")
+    const res = await fetch("https://gist.github.com/brunoguima7/d82c83f155e8757f8591819e4d028b24.js")
 
     const project: Project[] = await res.json()
 
