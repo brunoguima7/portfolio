@@ -13,7 +13,7 @@ Esse é o meu Portfolio, criado exclusivamente por mim. Nele você encontrará m
 
 Você pode acessar o meu site em:
 
-https://www.brunoguimaraesdev.site
+brunoguimaraesdev.vercel.app
 
 Ou instalar o projeto:
 
