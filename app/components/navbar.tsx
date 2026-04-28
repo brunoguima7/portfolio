@@ -18,13 +18,16 @@ export default function Navbar() {
 
     return (
         <>
-            <div className={`${isMenuOpen ? "w-full h-full bg-black fixed z-20 opacity-60 top-0 md:hidden" : "hidden"}`} onClick={changeMenu}></div>
+            <button className={`${isMenuOpen ? "w-full h-full bg-black fixed z-20 opacity-60 top-0 md:hidden" : "hidden"}`} onClick={changeMenu}>
+                <span className="sr-only">Menu</span>
+            </button>
             <header className={`${isMenuOpen ? "flex-col h-60 md:flex-row" : "h-[4.6rem] flex-row "} text-md py-2 flex px-5 justify-between fixed w-full top-0 z-20 drop-shadow-md`}>
                 <div className="flex">
                     <Link href="/" onClick={() => setIsMenuOpen(false)}>
                         <Image src="/favicon.ico" alt="Logotipo com as iniciais de Bruno Guimarães." width="50" height="50" unoptimized />
                     </Link>
                     <button className="md:hidden rounded-md my-2 fixed right-3" id="menu" onClick={changeMenu}>
+                        <span className="sr-only">Menu</span>
                         <MenuIcon className="fill-white w-10 h-10" />
                     </button>
                 </div>

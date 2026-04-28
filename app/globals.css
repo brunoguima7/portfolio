@@ -34,7 +34,6 @@ button {
 
 .no-scrollbar::-webkit-scrollbar{
   -md-overflow-style: none;
-  scrollbar-width: none;
 }
 
 ::-webkit-scrollbar{

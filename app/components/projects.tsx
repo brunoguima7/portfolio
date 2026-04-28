@@ -2,14 +2,14 @@ import Link from "next/link"
 import Image from "next/image"
 
 interface Image {
-    url: string, 
+    url: string,
     alt: string,
 }
 
 interface Tech {
     name: string
 }
-   
+
 interface Project {
     link: string,
     name: string,
@@ -31,64 +31,64 @@ export default async function Projects() {
                 <h2 className="text-center md:text-start text-3xl xl:text-5xl">Projetos Recentes</h2>
                 <ul className="flex flex-col flex-wrap md:flex-row gap-20 justify-center md:justify-start">
                     {project.map(({ link, name, description, techs, github, image }, index) => (
-                        <Link href={link} target="_blank" key={name + index}>
-                            <li className="space-y-2 p-3 rounded-2xl w-[17rem] h-[22rem] mx-auto md:mx-0 border border-blue-950 relative" id="card">
-                                <div className="flex justify-center">
-                                    <Image
-                                        src={image.url}
-                                        alt={image.alt}
-                                        width="250"
-                                        height="250"
-                                        className="rounded-lg"
-                                    />
-                                </div>
-                                <div className="ml-2">
-                                    <span className="text-lg">{name}</span>
-                                </div>
-                                <div className="ml-2">
-                                    <span className="text-sm text-slate-400">{description}</span>
-                                </div>
+                        <li key={name + index} className="list-none">
+                            <div className="block space-y-2 p-3 rounded-2xl w-[17rem] h-[22rem] mx-auto md:mx-0 border border-blue-950 relative" id="card">
+                                <Link href={link} target="_blank">
+                                    <div className="flex justify-center">
+                                        <Image
+                                            src={image.url}
+                                            alt={image.alt}
+                                            width="250"
+                                            height="250"
+                                            className="rounded-lg"
+                                        />
+                                    </div>
+                                    <div className="mt-2 ml-2">
+                                        <span className="text-lg">{name}</span>
+                                    </div>
+                                    <div className="ml-2">
+                                        <span className="text-sm text-slate-400">{description}</span>
+                                    </div>
+                                </Link>
                                 <div className="flex justify-between mx-2">
                                     <div className="flex flex-col absolute bottom-4 left-4">
                                         <div className="flex space-x-2">
                                             {techs.map(({ name }, index) => (
                                                 <div key={name + index}>
-                                                    <Image src={`/logos/${name}.png`} alt="" width="24" height="24"/>
-                                                </div> 
-                                            ))}         
+                                                    <Image src={`/logos/${name}.png`} alt="" width="24" height="24" />
+                                                </div>
+                                            ))}
                                         </div>
                                     </div>
-                                    <Link href={github} target="_blank">
+                                    <Link href={github} target="_blank" className="z-10">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" className="py-1 px-2 text-slate-300 rounded-lg bg-gradient-to-r from-blue-600 to-sky-400 hover:from-blue-500 hover:to-sky-300 absolute bottom-4 right-4">
+                                            strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="py-1 px-2 text-slate-300 rounded-lg bg-gradient-to-r from-blue-600 to-sky-400 hover:from-blue-500 hover:to-sky-300 absolute bottom-4 right-4">
                                             <path d="m18 16 4-4-4-4" />
                                             <path d="m6 8-4 4 4 4" /><path d="m14.5 4-5 16" />
                                         </svg>
                                     </Link>
                                 </div>
-                            </li>
-                        </Link>
-                    ))}
-                    <div>
-                        <li className="space-y-2 mx-auto md:mx-0">
-                            <div className="flex justify-center">
-                                <div className="flex flex-col h-[22rem] w-[17rem] rounded-2xl border border-blue-950" id="card">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="245" height="140" viewBox="0 0 24 24" fill="none" stroke="#10174c" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round" className="self-center mx-16 mt-3 mb-2 rounded-xl bg-blue-900 bg-opacity-10">
-                                        <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" />
-                                        <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" /><path d="M12 2v2" />
-                                        <path d="M12 22v-2" /><path d="m17 20.66-1-1.73" /><path d="M11 10.27 7 3.34" />
-                                        <path d="m20.66 17-1.73-1" /><path d="m3.34 7 1.73 1" /><path d="M14 12h8" /><path d="M2 12h2" />
-                                        <path d="m20.66 7-1.73 1" /><path d="m3.34 17 1.73-1" /><path d="m17 3.34-1 1.73" />
-                                        <path d="m11 13.73-4 6.93" />
-                                    </svg>
-                                    <div>
-                                        <span className="text-md ml-5">Projeto em construção... </span>
-                                    </div>
-                                </div>
                             </div>
                         </li>
-                    </div>
+                    ))}
+                    <li className="list-none space-y-2 mx-auto md:mx-0">
+                        <div className="flex justify-center">
+                            <div className="flex flex-col h-[22rem] w-[17rem] rounded-2xl border border-blue-950" id="card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="245" height="140" viewBox="0 0 24 24" fill="none" stroke="#10174c" strokeWidth="1.5"
+                                    strokeLinecap="round" strokeLinejoin="round" className="self-center mx-16 mt-3 mb-2 rounded-xl bg-blue-900 bg-opacity-10">
+                                    <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" />
+                                    <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" /><path d="M12 2v2" />
+                                    <path d="M12 22v-2" /><path d="m17 20.66-1-1.73" /><path d="M11 10.27 7 3.34" />
+                                    <path d="m20.66 17-1.73-1" /><path d="m3.34 7 1.73 1" /><path d="M14 12h8" /><path d="M2 12h2" />
+                                    <path d="m20.66 7-1.73 1" /><path d="m3.34 17 1.73-1" /><path d="m17 3.34-1 1.73" />
+                                    <path d="m11 13.73-4 6.93" />
+                                </svg>
+                                <div>
+                                    <span className="text-md ml-5">Projeto em construção... </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </>
