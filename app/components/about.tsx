@@ -22,7 +22,7 @@ export default function About() {
                             </div>
                             <div className="md:mx-16 xl:mx-0">
                                 <p className="text-md text-blue-200 xl:text-lg xl:w-3/4">
-                                    Desenvolvedor Fullstack apaixonado por criar soluções tecnológicas que geram impacto real nos negócios.
+                                    Desenvolvedor Fullstack que transforma desafios em soluções tecnológicas que geram impacto real nos negócios.
                                 </p>
                             </div>
                         </div>
@@ -90,7 +90,7 @@ export default function About() {
                     <div className="border-t border-blue-500 border-opacity-30 pt-16">
                         <h2 className="text-2xl xl:text-3xl mb-12 text-center">Experiência Profissional</h2>
                         <div className="space-y-10 max-w-4xl mx-auto">
-                            <div className="bg-gradient-to-r from-blue-900 to-blue-800 bg-opacity-30 p-6 rounded-lg border border-blue-500 border-opacity-20 hover:border-opacity-50 transition">
+                            <div className="bg-gradient-to-r from-blue-950 to-blue-900 bg-opacity-30 p-6 rounded-lg border border-blue-500 border-opacity-20 hover:border-opacity-50 transition">
                                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
                                     <div>
                                         <h3 className="text-xl font-semibold text-blue-300">Técnico de TI</h3>
@@ -106,7 +106,7 @@ export default function About() {
                                 </ul>
                             </div>
 
-                            <div className="bg-gradient-to-r from-blue-900 to-blue-800 bg-opacity-30 p-6 rounded-lg border border-blue-500 border-opacity-20 hover:border-opacity-50 transition">
+                            <div className="bg-gradient-to-r from-blue-950 to-blue-900 bg-opacity-30 p-6 rounded-lg border border-blue-500 border-opacity-20 hover:border-opacity-50 transition">
                                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
                                     <div>
                                         <h3 className="text-xl font-semibold text-blue-300">Analista de Processos</h3>
@@ -121,7 +121,7 @@ export default function About() {
                                 </ul>
                             </div>
 
-                            <div className="bg-gradient-to-r from-blue-900 to-blue-800 bg-opacity-30 p-6 rounded-lg border border-blue-500 border-opacity-20 hover:border-opacity-50 transition">
+                            <div className="bg-gradient-to-r from-blue-950 to-blue-900 bg-opacity-30 p-6 rounded-lg border border-blue-500 border-opacity-20 hover:border-opacity-50 transition">
                                 <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
                                     <div>
                                         <h3 className="text-xl font-semibold text-blue-300">Analista Administrativo</h3>
@@ -187,7 +187,6 @@ export default function About() {
                                     <li>• Express.js</li>
                                     <li>• APIs REST</li>
                                     <li>• Bancos SQL</li>
-                                    <li>• Lógica de Negócio</li>
                                 </ul>
                             </div>
                             <div>
@@ -205,10 +204,8 @@ export default function About() {
                                 <ul className="text-blue-200 space-y-2 text-sm md:text-base">
                                     <li>• Git & GitHub</li>
                                     <li>• Figma</li>
-                                    <li>• VS Code</li>
-                                    <li>• DevTools</li>
-                                    <li>• Gestão de Projetos</li>
-                                    <li>• Segurança da Informação</li>
+                                    <li>• IA's</li>
+                                    <li>• Docker</li>
                                 </ul>
                             </div>
                         </div>
