@@ -147,7 +147,7 @@ export default function About() {
                                         <h3 className="text-xl font-semibold text-cyan-300">Pós-Graduação em Fullstack Development</h3>
                                         <p className="text-cyan-200 text-sm">Em andamento</p>
                                     </div>
-                                    <span className="text-sm text-cyan-400 whitespace-nowrap">2024 - Presente</span>
+                                    <span className="text-sm text-cyan-400 whitespace-nowrap">2025 - Presente</span>
                                 </div>
                                 <p className="text-cyan-200 text-sm mt-3">Especialização em desenvolvimento fullstack moderno com foco em arquitetura de software, padrões de design e práticas de desenvolvimento escalável.</p>
                             </div>
@@ -158,9 +158,9 @@ export default function About() {
                                         <h3 className="text-xl font-semibold text-cyan-300">Análise e Desenvolvimento de Sistemas</h3>
                                         <p className="text-cyan-200 text-sm">Tecnólogo</p>
                                     </div>
-                                    <span className="text-sm text-cyan-400 whitespace-nowrap">2022 - 2024</span>
+                                    <span className="text-sm text-cyan-400 whitespace-nowrap">2021 - 2023</span>
                                 </div>
-                                <p className="text-cyan-200 text-sm mt-3">Formação técnica em análise de sistemas, desenvolvimento de software, banco de dados, engenharia de software e conceitos fundamentais de programação.</p>
+                                <p className="text-cyan-200 text-sm mt-3">Formação técnica em análise de sistemas, desenvolvimento de software, bancos de dados e conceitos fundamentais de programação.</p>
                             </div>
                         </div>
                     </div>
