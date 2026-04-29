@@ -47,7 +47,7 @@ export default function About() {
                     <div className="text-center">
                         <h1 className="text-3xl xl:text-5xl">Sobre Mim</h1>
                     </div>
-                    
+
                     {/* Bio + Habilidades */}
                     <div className="flex flex-col-reverse xl:flex-row justify-center xl:space-x-12">
                         <div className="flex items-center justify-center">
@@ -204,7 +204,7 @@ export default function About() {
                                 <ul className="text-blue-200 space-y-2 text-sm md:text-base">
                                     <li>• Git & GitHub</li>
                                     <li>• Figma</li>
-                                    <li>• IA's</li>
+                                    <li>• IA&apos;s</li>
                                     <li>• Docker</li>
                                 </ul>
                             </div>
