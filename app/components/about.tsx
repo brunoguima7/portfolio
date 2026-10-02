@@ -74,7 +74,7 @@ export function Hero() {
                 <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm text-blue-200">
                     <Link href="https://www.linkedin.com/in/bruno-guimaraes77/" target="_blank" rel="noopener noreferrer" className="hover:text-white">LinkedIn ↗</Link>
                     <Link href="https://github.com/brunoguima7" target="_blank" rel="noopener noreferrer" className="hover:text-white">GitHub ↗</Link>
-                    <Link href="https://www.dropbox.com/scl/fi/hmzdxikpjndhxzowbplke/Curr-culo.pdf?rlkey=wfwm80hhkvzrzj7retaprovqz&st=yy8cm4om&dl=1" className="hover:text-white">Baixar currículo ↓</Link>
+                    <a href="/Bruno_Guimaraes_Curriculo.pdf" download="Bruno_Guimaraes_Curriculo.pdf" className="hover:text-white">Baixar currículo ↓</a>
                 </div>
             </div>
             <div className="hidden lg:block">
