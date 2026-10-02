@@ -26,21 +26,23 @@ export default function Navbar() {
                     <Link href="/" onClick={() => setIsMenuOpen(false)}>
                         <Image src="/favicon.ico" alt="Logotipo com as iniciais de Bruno Guimarães." width="50" height="50" unoptimized />
                     </Link>
-                    <button className="md:hidden rounded-md my-2 fixed right-3" id="menu" onClick={changeMenu}>
+                    <button className="md:hidden rounded-md my-2 fixed right-3" id="menu" onClick={changeMenu} aria-expanded={isMenuOpen} aria-controls="mobile-navigation">
                         <span className="sr-only">Menu</span>
                         <MenuIcon className="fill-white w-10 h-10" />
                     </button>
                 </div>
                 <nav className="hidden md:flex gap-10 itens-stretch">
-                    <Link href="/#portfolio" className="hover:text-slate-300 rounded-lg text-center py-1 self-center">Projetos</Link>
+                    <Link href="/#atuacao" className="hover:text-slate-300 rounded-lg text-center py-1 self-center">Atuação</Link>
+                    <Link href="/#portfolio" className="hover:text-slate-300 rounded-lg text-center py-1 self-center">Experiência</Link>
                     <Link href="/#about" className="hover:text-slate-300 rounded-lg text-center py-1 self-center">Sobre mim</Link>
                     <Link href="/contact" className="rounded-lg w-32 text-center px-4 py-1 bg-gradient-to-r from-blue-600 to-sky-400 hover:from-blue-500 hover:to-sky-300 shadow-lg ml-4 mr-12 text-lg self-center">Contato</Link>
                 </nav>
                 {isMenuOpen == true && (
                     <div className="flex">
-                        <nav className="md:hidden flex flex-col text-lg mb-10 space-y-5 fixed right-4 top-20 text-right">
+                        <nav id="mobile-navigation" className="md:hidden flex flex-col text-base mb-6 space-y-3 fixed right-4 top-20 text-right">
+                            <Link href="/#atuacao" className="text-blue-200" onClick={changeMenu}>Atuação</Link>
                             <Link href="/#about" className="text-blue-200" onClick={changeMenu}>Sobre mim</Link>
-                            <Link href="/#portfolio" className="text-blue-200" onClick={changeMenu}>Projetos</Link>
+                            <Link href="/#portfolio" className="text-blue-200" onClick={changeMenu}>Experiência</Link>
                             <Link href="/contact" className="text-blue-200" onClick={changeMenu}>Contato</Link>
                         </nav>
                     </div>

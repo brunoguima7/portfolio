@@ -62,7 +62,7 @@ export default function Form() {
         <div className="xl:absolute xl:left-1/3 xl:right-1/3 xl:pt-24">
           <div className="flex flex-col space-y-10">
             <div className="flex justify-center">
-              <p className="text-2xl md:text-3xl">Contate-me aqui</p>
+              <h1 className="text-2xl md:text-3xl">Vamos conversar</h1>
             </div>
             <div className="flex justify-center">
               <form
@@ -116,7 +116,7 @@ export default function Form() {
                   <textarea
                     id="message"
                     className="text-slate-400 rounded-md placeholder-slate-600 bg-slate-950 h-24 border-2 border-blue-900 focus:border-cyan-400 focus:outline-none p-3 transition"
-                    placeholder="Vamos conversar..."
+                    placeholder="Conte sobre a oportunidade ou o que sua empresa precisa."
                     {...register('message', { required: 'A mensagem não pode estar vazia' })}
                   />
                   {errors.message && <span className="text-red-500 text-sm mt-1">{errors.message.message}</span>}

@@ -1,5 +1,5 @@
 
-import './globals.css' with { type: 'css' };
+import './globals.css';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import type { Metadata } from 'next';
@@ -7,8 +7,8 @@ import { Toaster } from 'react-hot-toast';
 import { JetBrains_Mono } from 'next/font/google';
 
 export const metadata: Metadata = {
-    title: 'Bruno Guimarães Dev',
-    description: "Este é o meu portfolio, sinta-se à vontade para visitá-lo."
+    title: 'Bruno Guimarães | Desenvolvedor Full Stack',
+    description: "Desenvolvedor Full Stack, Analista de Implantação na WCR Saneamento e cofundador da Synora. Conheça minha experiência com React, Python, SQL e automação de processos."
 };
 
 const jetBrains = JetBrains_Mono({
@@ -22,7 +22,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className={`${jetBrains.className} !scroll-smooth`}>
+        <html lang="pt-BR" className={`${jetBrains.className} !scroll-smooth`}>
             <body>
                 <Toaster position="top-right" />
                 <Navbar />
