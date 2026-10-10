@@ -1,9 +1,9 @@
 export default function Footer() {
     return(
-        <div className="flex justify-center bg-black bg-opacity-50 h-[4.6rem] w-full text-slate-500 text-xs md:text-sm py-7 ">
+        <footer className="flex shrink-0 items-center justify-center bg-black bg-opacity-50 min-h-[4.6rem] w-full px-6 py-7 text-center text-slate-500 text-xs md:text-sm">
             <div>
                 <span>© {new Date().getFullYear()} Bruno Guimarães.</span>
             </div>
-        </div>
+        </footer>
     )
 }

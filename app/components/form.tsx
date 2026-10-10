@@ -25,10 +25,10 @@ export default function Form() {
 
   return (
     <>
-      <div className="flex flex-col xl:flex-row-reverse mx-6 md:mx-10 space-y-12 xl:space-y-0 mb-20 xl:h-[84vh]">
+      <div className="mx-6 mb-20 flex flex-col gap-12 pt-24 md:mx-10 xl:grid xl:grid-cols-3 xl:items-start xl:gap-8">
         {/* Seção de contatos */}
-        <div className="flex justify-center md:justify-end h-auto md:h-[425px]">
-          <div className="flex flex-col mt-12 md:mt-24 space-y-10 md:bg-slate-950/25 p-4 rounded-2xl drop-shadow-2xl">
+        <div className="flex justify-center md:justify-end xl:col-start-3 xl:row-start-1">
+          <div className="flex flex-col space-y-10 md:bg-slate-950/25 p-4 rounded-2xl drop-shadow-2xl">
             <div className="flex justify-center">
               <p className="text-2xl">Contatos</p>
             </div>
@@ -59,7 +59,7 @@ export default function Form() {
         </div>
 
         {/* Formulário */}
-        <div className="xl:absolute xl:left-1/3 xl:right-1/3 xl:pt-24">
+        <div className="min-w-0 xl:col-start-2 xl:row-start-1">
           <div className="flex flex-col space-y-10">
             <div className="flex justify-center">
               <h1 className="text-2xl md:text-3xl">Vamos conversar</h1>

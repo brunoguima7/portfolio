@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="pt-BR" className={`${jetBrains.className} !scroll-smooth`}>
-            <body>
+            <body className="flex min-h-dvh flex-col">
                 <Toaster position="top-right" />
                 <Navbar />
                 {children}
