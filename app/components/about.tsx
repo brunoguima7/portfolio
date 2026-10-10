@@ -31,14 +31,16 @@ const experiences = [
         role: "Técnico de TI", company: "Sabesp · Terceirizado", period: "jul. 2025 – jul. 2026",
         activities: [
             "Desenvolvimento e manutenção de aplicações para as áreas operacionais, participando da lógica de negócio, do backend e da construção das interfaces.",
-            "Contribuição significativa na definição de regras de negócio e na melhoria de regras existentes nos sistemas SNI/SSI.",
+            "Contribuição significativa na definição e no aprimoramento das regras de negócio dos sistemas internos, conectando as necessidades da operação ao funcionamento das aplicações.",
             "Desenvolvimento direto do frontend e de automações para extrair dados de sistemas terceiros, utilizando Python, Selenium e Pandas.",
+            "Elaboração de relatórios operacionais, transformando dados em informações estruturadas para o acompanhamento das atividades e o apoio à tomada de decisões.",
             "Participação na gestão dos projetos, na proposição de melhorias e nos testes, com foco em usabilidade, inovação e segurança da informação.",
         ],
     },
     {
         role: "Analista Administrativo", company: "Nsure Foundation Corretora de Seguros", period: "nov. 2024 – jul. 2025",
         activities: [
+            "Desenvolvimento de relatórios sobre a utilização dos planos de saúde contratados pelos clientes, transformando dados de uso em informações claras para o acompanhamento dos benefícios e o apoio à tomada de decisões.",
             "Controle e atualização de planilhas gerenciais, além da manutenção e operação do sistema interno da empresa.",
             "Suporte às áreas administrativas e operacionais, contribuindo para a organização e a eficiência dos processos internos.",
             "Organização de dados e atualização de informações para apoiar a tomada de decisões e identificar oportunidades de otimização.",
@@ -56,7 +58,7 @@ const experiences = [
 const skills = [
     { title: "Frontend", items: ["React.js", "Next.js", "JavaScript", "TypeScript", "HTML5 e CSS3", "Tailwind CSS", "Design responsivo", "UI/UX"] },
     { title: "Backend e bancos de dados", items: ["Node.js", "Express.js", "APIs REST e integração de sistemas", "SQL", "MySQL", "Programação orientada a objetos (POO)"] },
-    { title: "Automação e análise de dados", items: ["Python", "Selenium", "Pandas", "Extração de dados e web scraping", "Automação de processos", "Análise de dados", "Microsoft Excel"] },
+    { title: "Automação e análise de dados", items: ["Python", "Selenium", "Pandas", "Extração de dados e web scraping", "Automação de processos", "Análise de dados", "Microsoft Excel", "Power BI"] },
     { title: "Ferramentas e tecnologia", items: ["Git", "GitHub", "Docker", "Figma", "Serviços em nuvem", "Inteligência artificial", "Segurança da informação"] },
     { title: "Processos e negócios", items: ["Implantação de software", "Administração de sistemas", "Análise de negócios", "Melhoria de processos", "Gestão de projetos", "Atendimento ao cliente", "Inglês"] },
 ]
@@ -115,7 +117,7 @@ export default function About() {
                 <p className="mt-6 max-w-3xl leading-relaxed text-blue-200">Minha trajetória passa por administração, análise de processos e desenvolvimento de software. Essa experiência me ajuda a entender a rotina de quem usa os sistemas, identificar gargalos e transformar necessidades da operação em soluções práticas.</p>
                 <p className="mt-4 max-w-3xl leading-relaxed text-blue-200">Sou formado em Análise e Desenvolvimento de Sistemas e pós-graduado em Fullstack Development. Meu trabalho reúne desenvolvimento, automação e implantação, com interesse em inteligência artificial e inovação digital.</p>
                 <div className="mt-10 flex flex-wrap gap-3" aria-label="Principais tecnologias">
-                    {["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Python", "SQL", "MySQL", "Tailwind CSS", "Selenium", "Pandas", "Git", "GitHub", "Docker", "Figma"].map((technology) => (
+                    {["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Python", "SQL", "MySQL", "Tailwind CSS", "Selenium", "Pandas", "Power BI", "Git", "GitHub", "Docker", "Figma"].map((technology) => (
                         <span key={technology} className="rounded-lg border border-cyan-400/30 bg-blue-900/50 px-4 py-2 text-sm text-cyan-100">{technology}</span>
                     ))}
                 </div>
