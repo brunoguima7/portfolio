@@ -9,7 +9,7 @@ const areas = [
 
 const experiences = [
     {
-        role: "Analista de Implantação", company: "WCR Saneamento", period: "ago. 2026 – atual",
+        role: "Analista de Implantação", company: "WCR Saneamento · Freelance", period: "ago. 2026 – out. 2026",
         activities: [
             "Implantação e sustentação de sistemas e serviços voltados ao saneamento, conectando processos operacionais, gestão de dados e tecnologia.",
             "Controle, organização e análise de dados internos e operacionais, com foco na confiabilidade e disponibilidade das informações.",
@@ -66,9 +66,17 @@ export function Hero() {
     return (
         <section className="mx-auto grid max-w-6xl items-center gap-12 px-6 pb-20 pt-32 md:px-10 md:pb-28 md:pt-44 lg:grid-cols-[1fr_280px]">
             <div>
-                <p className="mb-6 text-sm text-cyan-300">Bruno Guimarães / Desenvolvedor Full Stack</p>
+                <div className="mb-8 flex items-center gap-4 lg:hidden">
+                    <Image className="h-24 w-24 shrink-0 rounded-full border-2 border-cyan-300/60 object-cover object-center p-1" src="/images/pfp.jpg" width={96} height={96} alt="Bruno Guimarães" priority unoptimized />
+                    <div className="min-w-0">
+                        <p className="text-lg leading-snug text-white">Bruno Guimarães</p>
+                        <p className="mt-1 text-sm text-cyan-300">Desenvolvedor Full Stack</p>
+                        <p className="mt-2 text-xs text-blue-200">São Paulo, Brasil</p>
+                    </div>
+                </div>
+                <p className="mb-6 hidden text-sm text-cyan-300 lg:block">Bruno Guimarães / Desenvolvedor Full Stack</p>
                 <h1 className="max-w-4xl text-4xl leading-tight tracking-tight md:text-5xl lg:text-6xl">Sistemas e automações para <span className="text-cyan-300">melhorar operações.</span></h1>
-                <p className="mt-7 max-w-2xl text-base leading-relaxed text-blue-100 md:text-lg">Conecto desenvolvimento de software, dados e visão de negócio. Sou Analista de Implantação na WCR Saneamento e cofundador da Synora Smart Operations.</p>
+                <p className="mt-7 max-w-2xl text-base leading-relaxed text-blue-100 md:text-lg">Conecto desenvolvimento de software, dados e visão de negócio para criar soluções que simplificam rotinas, automatizam processos e apoiam decisões.</p>
                 <div className="mt-9 flex flex-wrap gap-4">
                     <Link href="#portfolio" className="rounded-xl bg-cyan-300 px-5 py-3 text-sm text-slate-950 transition hover:bg-cyan-200">Conheça minha atuação →</Link>
                     <Link href="/contact" className="rounded-xl border border-blue-400/50 px-5 py-3 text-sm transition hover:bg-blue-900/50">Entre em contato</Link>
